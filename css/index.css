@@ -1,0 +1,202 @@
+/* Estilos generales y tipografía limpia */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #1e293b;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedores centrados con diseño de tarjeta principal */
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 750px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(14, 116, 144, 0.08);
+}
+
+.container h3 {
+    margin-top: 0;
+    color: #0369a1;
+    font-size: 1.25rem;
+}
+
+/* Botones modernos con tonos azul claro y azul oscuro */
+a.button,
+#txtBtn,
+#jsonBtn,
+#apiBTN,
+#pokeBtn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    margin: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);
+}
+
+a.button:hover,
+#txtBtn:hover,
+#jsonBtn:hover,
+#apiBTN:hover,
+#pokeBtn:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(3, 105, 161, 0.3);
+}
+
+/* Campo de entrada de texto (Input) */
+#pokemonInput {
+    padding: 10px 14px;
+    width: 55%;
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: all 0.2s;
+    background-color: #f8fafc;
+}
+
+#pokemonInput:focus {
+    border-color: #0284c7;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* Área de resultados contenedora */
+#resultado {
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Tarjeta simple para TXT */
+.info-card {
+    background: #f8fafc;
+    border: 1px solid #bae6fd;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.info-card h4 {
+    margin: 0 0 8px 0;
+    color: #0369a1;
+}
+
+.info-card p {
+    margin: 0;
+    color: #334155;
+    font-size: 15px;
+}
+
+/* Cuadrícula (Grid) para mostrar elementos múltiples en tarjetas (JSON y API Picsum) */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* Tarjeta individual por cada elemento */
+.card-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #0284c7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-item h4 {
+    margin: 0 0 8px 0;
+    color: #0f172a;
+    font-size: 1.1rem;
+}
+
+.card-item p {
+    margin: 0 0 12px 0;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Enlace dentro de las tarjetas de imágenes */
+.link-btn {
+    display: inline-block;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.link-btn:hover {
+    background-color: #bae6fd;
+}
+
+/* Tarjeta específica para el Pokémon */
+.pokemon-card {
+    text-align: center;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #bae6fd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.pokemon-card img {
+    width: 130px;
+    height: 130px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.pokemon-card h3 {
+    margin-bottom: 5px;
+    color: #0f172a;
+    text-transform: capitalize;
+}
+
+.pokemon-card h3 small {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.pokemon-card p {
+    margin: 8px 0;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Etiquetas de tipo de Pokémon */
+.badge {
+    background-color: #0284c7;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
